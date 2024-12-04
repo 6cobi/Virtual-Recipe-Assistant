@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script>
+      const updateBackgroundColor = () => {
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 600) {
+          document.body.style.backgroundColor = "#FFCCCC"; 
+        } else if (screenWidth < 1000) {
+          document.body.style.backgroundColor = "#FFF5CC"; 
+        } else {
+          document.body.style.backgroundColor = ""; 
+        }
+      };
+      window.addEventListener("resize", updateBackgroundColor);
+      window.addEventListener("load", updateBackgroundColor);
+    </script>
+    <script type="text/babel" src="./assets/js/homepage.js"></script>
+    <link rel="stylesheet" href="./assets/styles/homepage.css" />
+    <link rel="stylesheet" href="./assets/static/reset.css" />
+
+    <script src="./assets/static/react.development.js"></script>
+    <script src="./assets/static/react-dom.development.js"></script>
+    <script src="./assets/static/babel.min.js"></script>
+    <script src="./assets/static/dayjs.min.js"></script>
+    <script src="./assets/static/icons.js"></script>
+    <script src="./assets/static/cssinjs.js"></script>
+    <script src="./assets/static/antd.js"></script>
+    <script src="./assets/static/antdx.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
